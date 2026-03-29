@@ -1,0 +1,44 @@
+/* Alap oldal teljes háttér */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Középre igazítás az alap oldalon */
+.alap-focsoport {
+    display: flex;
+    flex-direction: column; /* egymás alatt */
+    gap: 40px; /* távolság a gombok között */
+    align-items: center;
+}
+
+/* Nagy menü kockák */
+.kocka-link.nagy {
+    width: 300px;
+    height: 160px;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(145deg, #2c2c2c, #4a4a4a);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+/* Hover-effekt */
+.kocka-link.nagy:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #4facfe, #00f2fe);
+    color: black;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
